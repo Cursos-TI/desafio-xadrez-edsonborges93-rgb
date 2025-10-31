@@ -23,11 +23,9 @@
 
   
     printf("=== MOVIMENTACAO DO BISPO ===\n");
-    for (i = 1; i <= MOV_BISPO; i++)
-     {
+    for (i = 1; i <= MOV_BISPO; i++) {
         printf("Passo %d: Mover CIMA + DIREITA\n", i);
     }
- 
 
     // Implementação de Movimentação da Torre
     // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
@@ -51,26 +49,24 @@
     } while (i <= MOV_RAINHA);
 
 
-}
+
 
     // Nível Aventureiro - Movimentação do Cavalo
     // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
     // Um loop pode representar a movimentação horizontal e outro vertical.
+        // Movimentação do Cavalo (em L)
+    printf("\n=== MOVIMENTACAO DO CAVALO ===\n");
 
+    // O cavalo move 2 casas para baixo e 1 para a esquerda (movimento em L)
+    for (int linha = 1; linha <= 2; linha++) {
+        printf("Passo %d: Mover para BAIXO\n", linha);
+    }
 
-// Função recursiva para movimentar o Bispo
+    for (int coluna = 1; coluna <= 1; coluna++) {
+        printf("Passo %d: Mover para ESQUERDA\n", coluna);
+    }
 
+    printf("\nMovimento em L concluído!\n");
 
-
-// Função recursiva para movimentar a Torre
-
-
-
-
-// Função recursiva para movimentar a Rainha
-
-
-
-// =============================
-// FUNÇÃO PRINCIPAL
-// =============================
+    return 0;
+}
